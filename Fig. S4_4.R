@@ -14,7 +14,7 @@ par(mar=c(6,6,1,1),mfrow=c(2,2),font.axis=2)
 #tiff("Figure 7a.tiff", width = 10, height = 7, units = 'in', res = 400, compression = 'lzw')
 
 boxplot(y ~ x, data = Mydata41, 
-        outline = FALSE,size=2,cex.axis=2,lwd = 2, boxlwd = 3,font=2, frame.plot=FALSE, ylim=c(10,32))
+        outline = FALSE,size=2,cex.axis=2,lwd = 2, boxlwd = 3,font=2, frame.plot=FALSE, ylim=c(10,32),ann=FALSE)
 beeswarm(y ~ x, data = Mydata41, 
          col = rainbow(9), pch = 16, add = TRUE, method= 'swarm', cex=2,frame.plot=FALSE,lwd=3)
 #box(lwd=3,frame.plot=FALSE) 
@@ -30,7 +30,7 @@ title(xlab="Maximum number of DCs binding to naive CD8+ T cells", ylab="Weeks",c
 par(mar=c(6,6,1,1))
 
 boxplot(y ~ x, data = Mydata42, 
-        outline = FALSE,size=2.0,cex.axis=2.0,lwd = 2, boxlwd = 3,font=2, frame.plot=FALSE, ylim=c(10,32), xlim=c(0.8,9.2))
+        outline = FALSE,size=2.0,cex.axis=2.0,lwd = 2, boxlwd = 3,font=2, frame.plot=FALSE, ylim=c(10,32), xlim=c(0.8,9.2),ann=FALSE)
 beeswarm(y ~ x, data = Mydata42, 
          col = rainbow(9), pch = 16, add = TRUE, method= 'swarm', cex=2,frame.plot=FALSE,lwd=3)
 
@@ -44,7 +44,7 @@ title(xlab="Maximum number of antigens binding to DCs", ylab="Weeks",cex.lab=2,f
 
 par(mar=c(6,6,1,1))
 boxplot(y ~ x, data = Mydata43, 
-        outline = FALSE,size=2.0,cex.axis=2.0,lwd = 2, boxlwd = 3,font=2, frame.plot=FALSE,ylim=c(10,32))
+        outline = FALSE,size=2.0,cex.axis=2.0,lwd = 2, boxlwd = 3,font=2, frame.plot=FALSE,ylim=c(10,32),ann=FALSE)
 beeswarm(y ~ x, data = Mydata43, 
          col = rainbow(9), pch = 16, add = TRUE, method= 'swarm', cex=2,frame.plot=FALSE,lwd=3)
 
@@ -57,7 +57,7 @@ title(xlab="Maximum number of beta cells binding to CTLs", ylab="Weeks",cex.lab=
 #tiff("Figure 7d.tiff", width = 10, height = 7, units = 'in', res = 400, compression = 'lzw')
 par(mar=c(6,6,1,1))
 boxplot(y ~ x, data = Mydata44, 
-        outline = FALSE,size=2.0,cex.axis=2.0,lwd = 2, boxlwd = 3,font=2, frame.plot=FALSE, ylim=c(10,32))
+        outline = FALSE,size=2.0,cex.axis=2.0,lwd = 2, boxlwd = 3,font=2, frame.plot=FALSE, ylim=c(10,32),ann=FALSE)
 beeswarm(y ~ x, data = Mydata44, 
          col = rainbow(9), pch = 16, add = TRUE, method= 'swarm', cex=2,frame.plot=FALSE,lwd=3)
 
